@@ -2,100 +2,119 @@
 <html>
   <head>
     <title>Mama Mia Pizzeria</title>
+    <link href= "css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href= "css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href= "css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Mama Mia Pizzeria</h1>
-    <h2>Savour the flavour</h2>
-    <img src = "img/logo2.jpg" a ="Mama Mia pizzeria">
-    <p>Here at Mama Mia Pizzeria, we strive to perfect the craftsmanship and art of making delicious pizza's for all to enjoy. With our wide range of pizza toppings, flavours and add-ons, our build a pizza feature allows you to make your perfect pizza, so you can savour your own craftsmanship. SO GET WILD and make your own dream flavour a reality</p>
-    <br>
-    <h3>Choose from our wide range of in house pizzas</h3>
-    <img src = "img/Bacon-pickle.jpg" a ="Bacon pickle pizza" height= 500px width= 500px>
-    <img src = "img/BBQ-Chicken.jpg" a ="BBQ chicken pizza" height= 500px width= 500px>
-    <img src = "img/ham-egg.jpg" a ="ham egg pizza" height= 500px width= 500px>
-    <img src = "img/veggie pizza.jpg" a ="Veggie pizza" height= 500px width= 500px>
-    <img src = "img/Pizzadilla.jpg" a ="Pizzadila pizza" height= 500px width= 500px>
-    <h3>Or create your own new flavour to savour</h3>
-    <p>Let's start with the size</p>
-    <form>
-      <input name="size" id="small" type="radio" value="small" >Small</input>
+    <div class="card">
+      <h1>Mama Mia Pizzeria</h1>
+      <h2>Savour the flavour</h2>
+      <img src = "img/logo2.jpg" a ="Mama Mia pizzeria">
+      <p>Here at Mama Mia Pizzeria, we strive to perfect the craftsmanship and art of making delicious pizza's for all to enjoy. With our wide range of pizza toppings, flavours and add-ons, our build a pizza feature allows you to make your perfect pizza, so you can savour your own craftsmanship. SO GET WILD and make your own dream flavour a reality</p>
       <br>
-      <input name="size" id="medium" type="radio" value="medium ">Medium</input>
+      <div class="container">
+        <h3>Choose from our wide range of in house pizzas</h3>
+        <div class="row">
+          <img class= "col-md-6" src = "img/default/Bacon-pickle.jpg" a ="Bacon pickle pizza" height= 600px width= 600px>
+          <img class= "col-md-6" src = "img/default/BBQ-Chicken.jpg" a ="BBQ chicken pizza" height= 600px width= 600px>
+          <img class= "col-md-6" src = "img/default/ham-egg.jpg" a ="ham egg pizza" height= 600px width= 600px>
+          <img class= "col-md-6" src = "img/default/veggie pizza.jpg" a ="Veggie pizza" height= 600px width= 600px>
+          <img class= "col-md-6" src = "img/default/Pizzadilla.jpg" a ="Pizzadila pizza" height= 600px width= 600px>
+          <img class= "col-md-6" src = "img/default/mexican-pizza.jpg" a="mexican pizza" height= 600px width= 600px>
+        </div>
+      </div>
+      <h3>Or create your own new flavour to savour</h3>
+      <p>Let's start with the size</p>
+      <form>
+        <input name="size" id="small" type="radio" value="small" >Small</input>
+        <br>
+        <input name="size" id="medium" type="radio" value="medium ">Medium</input>
+        <br>
+        <input name="size" id="large" type="radio" value="large">Large</input>
+        <br>
+        <input name="size" id="extra" type="radio" value="Extra Large">Extra Large</input>
+        <br>
+      </form>
       <br>
-      <input name="size" id="large" type="radio" value="large">Large</input>
+      <p>Choose your crust size</p>
+      <form>
+        <input name="crust" id="crispy" type="radio" value="crispy">Crispy</input>
+        <br>
+        <input name="crust" id="stuffed" type="radio" value="stuffed">Stuffed</input>
+        <br>
+        <input name="crust" id="gluten-free" type="radio" value="gluten-free">Gluten-free</input>
+        <br>
+      </form>
       <br>
-      <input name="size" id="extra" type="radio" value="Extra Large">Extra Large</input>
+      <p>What meat will you eat? (Choose up to four)</p>
+      <form>
+        <input name="flavour" id="ham" type="checkbox" value="ham and eggs">Ham and Eggs</input>
+        <input name="flavour" id="bacon" type="checkbox" value="bacon">Bacon</input>
+        <input name="flavour" id="borewors" type="checkbox" value="borewors">Borewors</input>
+        <input name="flavour" id="bbq-chicken" type="checkbox" value="bbq chicken">BBQ Chicken</input>
+        <input name="flavour" id="chicken-tikka" type="checkbox" value="chicken tikka">Chicken Tikka</input>
+        <input name="flavour" id="bbq-steak" type="checkbox" value="bbq steak">BBQ Steak</input>
+        <input name="flavour" id="veggie" type="checkbox" value="veggie">Veggie</input>
+        <input name="flavour" id="pepperoni" type="checkbox" value="pepperoni">Pepperoni</input>
+      </form>
       <br>
-    </form>
-    <br>
-    <p>Choose your crust size</p>
-    <form>
-      <input name="crust" id="crispy" type="radio" value="crispy">Crispy</input>
+      <p>Choose your toppings (Choose up to four, don't worry, we'll make it work :) )</p>
+      <form>
+        <input name="toppings" id="pineapple" type="checkbox" value="pineapple">Pineapple</input>
+        <input name="toppings" id="black-olives" type="checkbox" value="black olives">Black olives</input>
+        <input name="toppings" id="sausage-bits" type="checkbox" value="sausage bits">Sausage bits</input>
+        <input name="toppings" id="green-olives" type="checkbox" value="green olives">Green olives</input>
+        <input name="toppings" id="mushrooms" type="checkbox" value="mushrooms">Mushrooms</input>
+        <input name="toppings" id="salami" type="checkbox" value="salami">Salami</input>
+        <input name="toppings" id="jalapenos" type="checkbox" value="jalapenos">jalapenos</input>
+        <input name="toppings" id="sweetcorn" type="checkbox" value="sweetcorn">Sweetcorn</input>
+      </form>
       <br>
-      <input name="crust" id="stuffed" type="radio" value="stuffed">Stuffed</input>
+      <p>Cheese options (Choose as many as you like, we'll spread them round)</p>
+      <form>
+        <input name="cheese" id="mozzarella" type="checkbox" value="mozzarella">Mozzarella</input>
+        <input name="cheese" id="parmesian" type="checkbox" value="parmesian">Parmesian</input>
+        <input name="cheese" id="feta" type="checkbox" value="feta">Feta</input>
+        <input name="cheese" id="goat-cheese" type="checkbox" value="goat cheese">Goat Cheese</input>
+      </form>
       <br>
-      <input name="crust" id="gluten-free" type="radio" value="gluten-free">Gluten-free</input>
+      <p>Put some Sauce on it (Choose up to four)</p>
+      <form>
+        <input name="sauce" id="bbq-sauce" type="checkbox" value="bbq sauce">BBQ Sauce</input>
+        <input name="sauce" id="humus" type="checkbox" value="humus">Humus</input>
+        <input name="sauce" id="salsa" type="checkbox" value="salsa">Salsa</input>
+        <input name="sauce" id="ranch" type="checkbox" value="ranch">Ranch</input>
+        <input name="sauce" id="curry" type="checkbox" value="curry">Curry</input>
+        <input name="sauce" id="wasabi" type="checkbox" value="wasabi">Wasabi</input>
+        <input name="sauce" id="duck" type="checkbox" value="duck">Duck</input>
+        <input name="sauce" id="nutella" type="checkbox" value="nutella">Nutella</input>
+      </form>
       <br>
-    </form>
-    <br>
-    <p>What meat will you eat? (Choose up to four)</p>
-    <form>
-      <input name="flavour" id="ham" type="checkbox" value="ham and eggs">Ham and Eggs</input>
-      <input name="flavour" id="bacon" type="checkbox" value="bacon">Bacon</input>
-      <input name="flavour" id="borewors" type="checkbox" value="borewors">Borewors</input>
-      <input name="flavour" id="bbq-chicken" type="checkbox" value="bbq chicken">BBQ Chicken</input>
-      <input name="flavour" id="chicken-tikka" type="checkbox" value="chicken tikka">Chicken Tikka</input>
-      <input name="flavour" id="bbq-steak" type="checkbox" value="bbq steak">BBQ Steak</input>
-      <input name="flavour" id="veggie" type="checkbox" value="veggie">Veggie</input>
-      <input name="flavour" id="pepperoni" type="checkbox" value="pepperoni">Pepperoni</input>
-    </form>
-    <br>
-    <p>Choose your toppings (Choose up to four, don't worry, we'll make it work :) )</p>
-    <form>
-      <input name="toppings" id="pineapple" type="checkbox" value="pineapple">Pineapple</input>
-      <input name="toppings" id="black-olives" type="checkbox" value="black olives">Black olives</input>
-      <input name="toppings" id="sausage-bits" type="checkbox" value="sausage bits">Sausage bits</input>
-      <input name="toppings" id="green-olives" type="checkbox" value="green olives">Green olives</input>
-      <input name="toppings" id="mushrooms" type="checkbox" value="mushrooms">Mushrooms</input>
-      <input name="toppings" id="salami" type="checkbox" value="salami">Salami</input>
-      <input name="toppings" id="jalapenos" type="checkbox" value="jalapenos">jalapenos</input>
-      <input name="toppings" id="sweetcorn" type="checkbox" value="sweetcorn">Sweetcorn</input>
-    </form>
-    <br>
-    <p>Cheese options (Choose as many as you like, we'll spread them round)</p>
-    <form>
-      <input name="cheese" id="mozzarella" type="checkbox" value="mozzarella">Mozzarella</input>
-      <input name="cheese" id="parmesian" type="checkbox" value="parmesian">Parmesian</input>
-      <input name="cheese" id="feta" type="checkbox" value="feta">Feta</input>
-      <input name="cheese" id="goat-cheese" type="checkbox" value="goat cheese">Goat Cheese</input>
-    </form>
-    <br>
-    <p>Put some Sauce on it (Choose up to four)</p>
-    <form>
-      <input name="sauce" id="bbq-sauce" type="checkbox" value="bbq sauce">BBQ Sauce</input>
-      <input name="sauce" id="humus" type="checkbox" value="humus">Humus</input>
-      <input name="sauce" id="salsa" type="checkbox" value="salsa">Salsa</input>
-      <input name="sauce" id="ranch" type="checkbox" value="ranch">Ranch</input>
-      <input name="sauce" id="curry" type="checkbox" value="curry">Curry</input>
-      <input name="sauce" id="wasabi" type="checkbox" value="wasabi">Wasabi</input>
-      <input name="sauce" id="duck" type="checkbox" value="duck">Duck</input>
-      <input name="sauce" id="nutella" type="checkbox" value="nutella">Nutella</input>
-    </form>
-    <br>
-    <p>So who are you eating on the side ;) </p>
-    <img src="img/fries.gif" a="french fries" height= 500px width= 500px>
-    <img src="img/onion-rings.jpeg" a="onion rings" height= 500px width= 500px>
-    <img src="img/wings.jpg" a="BBQ wings" height= 500px width= 500px>
-    <img src="img/nuggets.jpeg" a="Chicken nuggets" height= 500px width= 500px>
-    <img src="img/sticks.jpg" a="Bread sticks" height= 500px width= 500px>
-    <br>
-    <p>Drinks and Dessert</p>
-    <img src="img/drinks.jpg" a="soda" height= 500px width= 500px>
-    <img src="img/ice-cream.jpeg" a="ice cream" height= 500px width= 500px>
-    <img src="img/milkshake.jpg" a="milkshake" height= 500px width= 500px>
-    <img src="img/krushers.jpg" a="krusher" height= 500px width= 500px>
-
-    <br>
+      <div class="container">
+        <p>So who are you eating on the side ;) </p>
+        <div class="row">
+          <img class = "col-md-3" src="img/sides/fries.gif" a="french fries" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/sides/onion-rings.jpeg" a="onion rings" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/sides/wings.jpg" a="BBQ wings" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/sides/nuggets.jpeg" a="Chicken nuggets" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/sides/sticks.jpg" a="Bread sticks" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/sides/tacos.jpeg" a="Tacos" height =250px width= 250px>
+          <img class = "col-md-3" src="img/sides/burger.jpg" a="burger" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/sides/nachos.jpg" a="Nachos" height= 250px width= 250px>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <p>Drinks and Dessert</p>
+        <div class="row">
+          <img class = "col-md-3" src="img/drinks.jpg" a="soda" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/ice-cream.jpeg" a="ice cream" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/milkshake.jpg" a="milkshake" height= 250px width= 250px>
+          <img class = "col-md-3" src="img/krushers.jpg" a="krusher" height= 250px width= 250px>
+        </div>
+      </div>
+   </div>
     <img src="img/social_icons/facebook.png">
     <img src="img/social_icons/twitter.png">
     <img src="img/social_icons/pinterest.png">
